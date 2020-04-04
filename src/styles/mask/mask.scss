@@ -1,10 +1,8 @@
-$time-for-transition: 1s;
-
 .mask{
   height: 100%;
   width: 100%;
   position: relative;
-  transition: all $time-for-transition 0s ease-out;
+  transition: all $time-work-mask 0s ease-out;
   transform: rotateZ(90deg);
 }
 .mask__layer{
