@@ -1,0 +1,12 @@
+.mask__item-three{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: all $time-for-transition 0s ease-out;
+  div:nth-child(1){
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    transform: scale(2);
+  }
+}

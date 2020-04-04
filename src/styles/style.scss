@@ -8,4 +8,7 @@ html,body{
   color: $text-color;
 }
 
-@import "wrapper/wrapper";
+@import "./wrapper/wrapper";
+@import "./present/present";
+@import "./background/background";
+@import "./mask/mask";
