@@ -1,0 +1,11 @@
+@import "vars";
+
+html,body{
+  height: 100%;
+  min-height: 720px;
+  width: 100%;
+  min-width: 1200px;
+  color: $text-color;
+}
+
+@import "wrapper/wrapper";

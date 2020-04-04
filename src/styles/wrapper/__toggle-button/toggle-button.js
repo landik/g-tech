@@ -1,0 +1,9 @@
+document.getElementsByClassName('wrapper__toggle-button')[0]
+        .addEventListener(
+            'click',
+            (event)=>{
+                event.preventDefault();
+                document.getElementsByClassName('wrapper')[0]
+                    .classList.toggle('wrapper_show-menu')
+            }
+            );

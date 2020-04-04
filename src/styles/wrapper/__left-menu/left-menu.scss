@@ -1,0 +1,9 @@
+.wrapper__left-menu{
+  height: 100vh;
+  width: $width-left-menu;
+  box-sizing: border-box;
+  position: fixed;
+  transform: translateX(-300px);
+  transition: 0.5s;
+  z-index: 100;
+}
