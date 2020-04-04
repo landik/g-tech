@@ -6,5 +6,5 @@ document.addEventListener('mousemove',event=>{
     // console.log(x,y,image);
     const signX = (w-x)/50,
         signY = (h-y)/50;
-    image.style.transform = `translate(${ signX }px,${ signY}px) scale(1.1)`
+    image.style.transform = `translate(${ signX }px,${ signY}px) scale(1.2)`
 });

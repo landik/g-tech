@@ -1,0 +1,65 @@
+.content{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas:  "top-margin top-margin top-margin top-margin"
+                        "left-margin logo empty right-margin"
+                        "left-margin title empty right-margin"
+                        "left-margin list empty right-margin"
+                        "left-margin bitrix advantages right-margin"
+                        "bottom-margin bottom-margin bottom-margin bottom-margin";
+  grid-template-columns: 50px 50% 1fr 50px;
+  grid-template-rows: 50px 117px auto auto 62px 50px;
+}
+.content__logo{
+  grid-area: logo;
+}
+.content__title{
+  grid-area: title;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 95px;
+}
+.content__list{
+  grid-area: list;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+.content__bitrix{
+  grid-area: bitrix;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  img{
+    vertical-align: middle;
+    margin-right: 10pt;
+  }
+}
+
+.content__title,
+.content__list,
+.content__bitrix{
+  margin-left: 40px;
+}
+
+.content__advantages{
+  grid-area: advantages;
+  text-align: right;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  padding-right: 20px;
+  &:after{
+    content: '';
+    display: inline-block;
+    border: 10px solid transparent;
+    border-bottom-color:$color-red;
+    border-right-color:$color-red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
