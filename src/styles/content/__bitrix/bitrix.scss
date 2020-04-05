@@ -1,0 +1,23 @@
+.content__bitrix{
+  grid-area: bitrix;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  img{
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width:1900px) {
+  .content__bitrix{
+    font-size: 36px;
+    line-height: 48px;
+    img{
+      margin-right: 16px;
+      height: 48px;
+    }
+  }
+}
