@@ -1,0 +1,18 @@
+@media screen and (max-width:1200px) {
+  .content__title{
+    font-size: 60px;
+    line-height: 82px;
+  }
+}
+@media screen and (min-width:1400px) and (min-height: 850px){
+  .content__title{
+    font-size: 92px;
+    line-height: 115px;
+  }
+}
+@media screen and (min-width:1900px) {
+  .content__title{
+    font-size: 114px;
+    line-height: 137px;
+  }
+}

@@ -1,0 +1,24 @@
+.content{
+  @include fullSize;
+  display: grid;
+  grid-template-areas:  "top-margin top-margin top-margin top-margin"
+                        "left-margin logo . right-margin"
+                        "left-margin title . right-margin"
+                        "left-margin list . right-margin"
+                        "left-margin bitrix advantages right-margin"
+                        "bottom-margin bottom-margin bottom-margin bottom-margin";
+  grid-template-columns: 50px 50% 1fr 50px;
+  grid-template-rows: 50px 117px auto auto 62px 50px;
+}
+.content__logo{
+  grid-area: logo;
+}
+.content__title,
+.content__list,
+.content__bitrix{
+  margin-left: 40px;
+}
+@import "__title/title";
+@import "__list/list";
+@import "__bitrix/bitrix";
+@import "__advantages/advantages";

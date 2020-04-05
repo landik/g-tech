@@ -1,0 +1,8 @@
+@media screen and (max-width:767px){
+  html,body{
+    min-height: inherit;
+  }
+}
+
+@import "./content/content";
+@import "./wrapper/wrapper";

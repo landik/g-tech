@@ -1,0 +1,16 @@
+@media screen and (min-width:1400px) and (min-height: 800px){
+  .content__advantages{
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (min-width:1900px){
+  .content__advantages{
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 30px;
+    &:after{
+      border-width: 15px;
+    }
+  }
+}
