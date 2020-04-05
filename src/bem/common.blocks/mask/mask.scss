@@ -1,0 +1,13 @@
+.mask{
+  @include fullSize;
+  position: relative;
+  transition: all $time-work-mask 0s ease-out;
+  transform: rotateZ(90deg);
+}
+
+@import "__layer/layer";
+@import "__item-one/item-one";
+@import "__item-two/item-two";
+@import "__item-three/item-three";
+
+@import "_show/show";

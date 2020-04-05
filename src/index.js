@@ -1,4 +1,3 @@
 import 'reset-css';
-import './styles/style.scss';
-
-import './styles/styles'
+import './bem/bem.scss';
+import './bem/bem.js'

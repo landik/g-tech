@@ -1,0 +1,20 @@
+//ipad pro portret
+@media screen and (orientation:portrait) and (max-width:1200px){
+  .content__title{
+    font-size: 72px;
+    line-height: 95px;
+  }
+}
+//ipad
+@media screen and (max-width:1000px){
+  .content__title{
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width:767px){
+  .content__title{
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
