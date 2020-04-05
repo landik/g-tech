@@ -26,13 +26,10 @@ const optimization = () => {
 
 module.exports={
     context: path.resolve(__dirname, 'src'),
-    entry: {
-        'js/index.js':'./index.js',
-        // 'css/style.css':'./styles/style.scss'
-    },
+    entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name]',
+        filename: isDev?'js/[name].js':'js/build.[hash].js',
         publicPath: '/'
     },
     mode: 'development',
@@ -101,7 +98,7 @@ module.exports={
                         {
                             loader: 'file-loader',
                             options: {
-                                name: 'css/fonts/[name].[ext]',
+                                name: 'css/fonts/[name].[ext]'
                             }
                         }
                     ]
