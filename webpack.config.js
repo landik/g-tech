@@ -26,10 +26,13 @@ const optimization = () => {
 
 module.exports={
     context: path.resolve(__dirname, 'src'),
-    entry: './index.js',
+    entry: {
+        'js/index.js':'./index.js',
+        // 'css/style.css':'./styles/style.scss'
+    },
     output: {
-        filename: isDev?'bundle.js':'bundle.[hash].js',
         path: path.resolve(__dirname, 'build'),
+        filename: '[name]',
         publicPath: '/'
     },
     mode: 'development',
@@ -49,12 +52,13 @@ module.exports={
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'style.css'
+            filename: 'css/style.css'
         }),
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, 'src','static'),
-                to: path.resolve(__dirname, 'build','static')
+                to: path.resolve(__dirname, 'build','static'),
+                force: true,
             }
         ]),
     ],
@@ -93,7 +97,14 @@ module.exports={
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader']
+                use: [
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: 'css/fonts/[name].[ext]',
+                            }
+                        }
+                    ]
             }
         ]
     }
