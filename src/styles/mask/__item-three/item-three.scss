@@ -1,6 +1,5 @@
 .mask__item-three{
-  height: 100%;
-  width: 100%;
+  @include fullSize;
   opacity: 1;
   transition: all $time-work-mask 0s ease-out;
   div:nth-child(1){

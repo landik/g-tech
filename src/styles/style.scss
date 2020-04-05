@@ -1,10 +1,10 @@
 @import "./vars";
+@import "./mixin";
 @import "./fonts/stylesheet.css";
 
 html,body{
-  height: 100%;
+  @include fullSize;
   min-height: 700px;
-  width: 100%;
   color: $text-color;
   font-family: 'Roboto', serif;
   font-weight: normal;

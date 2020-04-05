@@ -1,6 +1,5 @@
 .content{
-  height: 100%;
-  width: 100%;
+  @include fullSize;
   display: grid;
   grid-template-areas:  "top-margin top-margin top-margin top-margin"
                         "left-margin logo . right-margin"

@@ -1,11 +1,9 @@
 .present{
-  height: 100%;
-  width: 100%;
+  @include fullSize;
   position: relative;
 }
 .present__layer{
-  height: 100%;
-  width: 100%;
+  @include fullSize;
   position: absolute;
   top: 0;
   left: 0;
